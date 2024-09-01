@@ -1,0 +1,81 @@
+body {
+    background-color: #ffffff;
+    font-size: 13px;
+    font-family: "Domine", serif;
+    margin: 0.5rem;
+}
+
+body ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+body ul>li {
+    padding: 1rem;
+}
+
+body a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    background-color: #f0f0f0;
+    height: 35vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+nav.upper-nav {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+ul.account-btn>li>a {
+    background-color: #5f99c0;
+    padding: 0.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+section.logo-container {
+    display: grid;
+    height: 30%;
+    width: 100%;
+    /* grid-template-columns: 1fr 4fr; */
+    grid-template-areas: 
+        "date logo logo logo logo"
+        "paper logo logo logo logo";
+    gap: 0.2rem;
+}
+
+p#date {
+    grid-area: date;
+}
+
+p#paper {
+    grid-area: paper;
+}
+
+p#logo {
+    grid-area: logo;
+}
+
+nav.lower-nav {
+    text-transform: capitalize;
+}
+
+nav.lower-nav li>a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 70vw;
+    display: flex;
+    background-color: #bce4ff;
+}
+
