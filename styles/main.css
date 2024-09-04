@@ -1,3 +1,7 @@
+html {
+    padding: 1%;
+}
+
 body {
     background-color: #ffffff;
     font-size: 13px;
@@ -73,9 +77,52 @@ nav.lower-nav li>a:hover {
     text-decoration: underline;
 }
 
-main {
-    width: 70vw;
-    display: flex;
-    background-color: #bce4ff;
+.main-grid-container {
+    display: grid;
+    grid-template-areas: 
+        "article-1 article-1 img-1 img-1 img-1 img-1 side-txt-1"
+        "article-1 article-1 img-1 img-1 img-1 img-1 side-txt-1"
+        "article-2 article-2 img-1 img-1 img-1 img-1 side-txt2"
+        "article-2 article-2 img-1 img-1 img-1 img-1 side-txt-2"   
+    ;
 }
 
+.main-grid-container h1, h2, h3 {
+    text-transform: capitalize;
+}
+
+.main-grid-container span {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #5e5d5d;
+}
+
+.main-grid-container p {
+    line-height: 1.7rem;
+}
+
+.news-article-1 {
+    grid-area: article-1;
+    font-size: 1.1rem;
+}
+
+.news-article-2 {
+    grid-area: article-2;
+}
+
+.main-news-fig {
+    grid-area: img-1;
+}
+
+.main-news-image {
+    height: 80%;
+    object-fit: cover;
+}
+
+.side-col-1 {
+    grid-area: side-txt-1;
+}
+
+.side-col-2 {
+    grid-area: side-txt-2;
+}
