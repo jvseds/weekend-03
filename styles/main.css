@@ -69,6 +69,10 @@ p#logo {
     grid-area: logo;
 }
 
+#logo-svg {
+    fill: #000000;
+}
+
 nav.lower-nav {
     text-transform: capitalize;
 }
